@@ -1,28 +1,24 @@
 <h1 align="center">WhisperX</h1>
 
 <p align="center">
-  <a href="https://github.com/m-bain/whisperX/stargazers">
-    <img src="https://img.shields.io/github/stars/m-bain/whisperX.svg?colorA=orange&colorB=orange&logo=github"
+  <a href="https://github.com/GoodGameInfinity/whisperX/stargazers">
+    <img src="https://img.shields.io/github/stars/GoodGameInfinity/whisperX.svg?colorA=orange&colorB=orange&logo=github"
          alt="GitHub stars">
   </a>
-  <a href="https://github.com/m-bain/whisperX/issues">
-        <img src="https://img.shields.io/github/issues/m-bain/whisperx.svg"
+  <a href="https://github.com/GoodGameInfinity/whisperX/issues">
+        <img src="https://img.shields.io/github/issues/GoodGameInfinity/whisperx.svg"
              alt="GitHub issues">
   </a>
-  <a href="https://github.com/m-bain/whisperX/blob/master/LICENSE">
-        <img src="https://img.shields.io/github/license/m-bain/whisperX.svg"
+  <a href="https://github.com/GoodGameInfinity/whisperX/blob/master/LICENSE">
+        <img src="https://img.shields.io/github/license/GoodGameInfinity/whisperX.svg"
              alt="GitHub license">
   </a>
   <a href="https://arxiv.org/abs/2303.00747">
         <img src="http://img.shields.io/badge/Arxiv-2303.00747-B31B1B.svg"
              alt="ArXiv paper">
-  </a>
-  <a href="https://twitter.com/intent/tweet?text=&url=https%3A%2F%2Fgithub.com%2Fm-bain%2FwhisperX">
-  <img src="https://img.shields.io/twitter/url/https/github.com/m-bain/whisperX.svg?style=social" alt="Twitter">
-  </a>      
 </p>
 
-<img width="1216" align="center" alt="whisperx-arch" src="https://raw.githubusercontent.com/m-bain/whisperX/refs/heads/main/figures/pipeline.png">
+<img width="1216" align="center" alt="whisperx-arch" src="https://raw.githubusercontent.com/GoodGameInfinity/whisperX/refs/heads/main/figures/pipeline.png">
 
 <!-- <p align="left">Whisper-Based Automatic Speech Recognition (ASR) with improved timestamp accuracy + quality via forced phoneme alignment and voice-activity based batching for fast inference.</p> -->
 
@@ -89,7 +85,7 @@ These installation methods are for developers or users with specific needs. If y
 To install directly from the GitHub repository:
 
 ```bash
-uvx git+https://github.com/m-bain/whisperX.git
+uvx git+https://github.com/GoodGameInfinity/whisperX.git
 ```
 
 #### Option B: Developer Installation
@@ -97,7 +93,7 @@ uvx git+https://github.com/m-bain/whisperX.git
 If you want to modify the code or contribute to the project:
 
 ```bash
-git clone https://github.com/m-bain/whisperX.git
+git clone https://github.com/GoodGameInfinity/whisperX.git
 cd whisperX
 uv sync --all-extras --dev
 ```
@@ -146,7 +142,7 @@ To run on CPU instead of GPU (and for running on Mac OS X):
 The phoneme ASR alignment model is _language-specific_, for tested languages these models are [automatically picked from torchaudio pipelines or huggingface](https://github.com/m-bain/whisperX/blob/f2da2f858e99e4211fe4f64b5f2938b007827e17/whisperx/alignment.py#L24-L58).
 Just pass in the `--language` code, and use the whisper `--model large`.
 
-Currently default models provided for `{en, fr, de, es, it}` via torchaudio pipelines and many other languages via Hugging Face. Please find the list of currently supported languages under `DEFAULT_ALIGN_MODELS_HF` on [alignment.py](https://github.com/m-bain/whisperX/blob/main/whisperx/alignment.py). If the detected language is not in this list, you need to find a phoneme-based ASR model from [huggingface model hub](https://huggingface.co/models) and test it on your data.
+Currently default models provided for `{en, fr, de, es, it}` via torchaudio pipelines and many other languages via Hugging Face. Please find the list of currently supported languages under `DEFAULT_ALIGN_MODELS_HF` on [alignment.py](https://github.com/GoodGameInfinity/whisperX/blob/main/whisperx/alignment.py). If the detected language is not in this list, you need to find a phoneme-based ASR model from [huggingface model hub](https://huggingface.co/models) and test it on your data.
 
 #### E.g. German
 
